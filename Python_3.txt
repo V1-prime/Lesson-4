@@ -1,0 +1,8 @@
+name = input("What is your name? ")
+
+
+color = input("What is your color? ")
+
+dream_destination = input("What is your dream destination? ")
+
+print(f"So, your name is {name}, he says.\nYour journey will be painted in shades of {color}...\nYou seek {dream_destination}. That place holds secrets that may change your fate...")
