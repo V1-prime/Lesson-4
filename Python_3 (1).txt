@@ -1,0 +1,157 @@
+#Ultrakill (game) quiz
+
+
+dictionary = {'key':"Value"}
+dictionary['key']
+list_answer = ["value1",'value2']
+
+
+questions = {
+    "Which arm do you use for Parry? " : ["feedbacker","blue arm"],
+    "Who is main character/character we play as? " : ["V1","Blue robot","v1"],
+    "Which is the first boss? " : ["malicious face","rock head"],
+    "How to beat Gabriel? " : ["coins","shoot him with coins","ATM","pray"],
+    "What does red orbs do? " : ["Grant player 200 health", "Give player 200 health", "200 health"],
+    "Why did V1 went to hell? " : ["To get fuel","To get blood","fuel","blood","the mankind dissapeared"]
+
+}
+count_correct_answer = 0
+
+
+def check_answer(user_answer, question):
+    if user_answer in questions[question]:
+        return True
+    else:
+        return False 
+
+
+
+question = "Which arm do you use for Parry? "
+user_answer = input(question)
+
+if check_answer(user_answer,question):
+         count_correct_answer += 1
+         print("\n Answer is correct 🎉")
+else:
+     print("❗ ❗ ❗ WRONG❗ ❗ ❗")
+
+
+
+#************SIMPLE_1****************************
+# тут беремо запитання
+question = "Who is main character/character we play as? "
+#  Записуємо відповіть гравця
+user_answer = input(question)
+
+# Робимо перевірку на правильність відповіді
+# в душках передаємо відповіть гравця та питання, якщо можеш використувавати або це:
+if check_answer(user_answer,question):
+    
+    count_correct_answer += 1
+    print("\n Answer is correct 🎉")
+    
+else:
+    print("❗ ❗ ❗ WRONG❗ ❗ ❗")
+    
+#************SIMPLE_2****************************  
+# можна так вирішити, так наче простіше
+
+##user_answer = input(question)
+# Робим перевірку чи відповідь гравця знаходиться серед наших варіантів записаних в answers
+#if user_answer in answers:
+#    count_correct_answer += 1
+#    print("\n Answer is correct 🎉")
+#else:
+#    print("❗ ❗ ❗ WRONG❗ ❗ ❗")
+
+
+#question = "Who is main character/character we play as? "
+#user_answer = input(question)
+#if check_answer(user_answer,question):
+    
+#    count_correct_answer += 1
+#    print("\n Answer is correct 🎉")
+    
+#else:
+#     print("❗ ❗ ❗ WRONG❗ ❗ ❗")
+    
+
+question = "Which is the first boss? "
+user_answer = input(question)
+
+if check_answer(user_answer,question):
+    
+    count_correct_answer += 1
+    print("\n Answer is correct 🎉")
+    
+else:
+     print("❗ ❗ ❗ WRONG❗ ❗ ❗")
+    
+
+question = "How to beat Gabriel? "
+user_answer = input(question)
+
+if check_answer(user_answer,question):
+    
+    count_correct_answer += 1
+    print("\n Answer is correct 🎉")
+        
+else:
+     print("❗ ❗ ❗ WRONG❗ ❗ ❗")
+
+
+question = "What does red orbs do? "
+user_answer = input(question)
+
+if check_answer(user_answer,question):
+    
+    count_correct_answer += 1
+    print("\n Answer is correct 🎉")
+        
+else:
+     print("❗ ❗ ❗ WRONG❗ ❗ ❗")
+
+
+question = "Why did V1 went to hell? "
+user_answer = input(question)
+
+if check_answer(user_answer,question):
+    
+    count_correct_answer += 1
+    print("\n Answer is correct 🎉")
+        
+else:
+     print("❗ ❗ ❗ WRONG❗ ❗ ❗")
+    
+print(f"Correct answers: {count_correct_answer}")
+
+
+#the print is style ranks from the game itself (ULTRAKILL is the best, DESTRUCTIVE is the worst)
+
+if count_correct_answer == 0:
+    print("     0 \n'Press R to revive'")
+    print("       \n Good game!")
+    
+if count_correct_answer == 1:
+    print("     1 \n DESTRUCTIVE")
+    print("       \n Good game!")
+    
+elif count_correct_answer == 2:
+    print("     2 \n CHAOTIC")
+    print("       \n Good game!")
+ 
+elif count_correct_answer == 3:
+    print("     3 \n ANARCHIC")
+    print("       \n Good game!")
+    
+elif count_correct_answer == 4:
+    print("     4 \n SUPREME")
+    print("       \n Good game!")
+    
+elif count_correct_answer == 5:
+    print("     5 \n SSADISTIC")
+    print("       \n Good game!")
+     
+elif count_correct_answer == 6:
+    print("     6 \n ⚠ ULTRAKILL ⚠" )
+    print("       \n Good game!")
