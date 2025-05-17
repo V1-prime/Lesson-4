@@ -1,0 +1,79 @@
+main.py:
+-------
+# print(bool("    "))
+
+# print(bool(1))
+
+# print(bool(0))
+
+
+
+# user_number = int(input("Enter your number "))
+# print(user_number % 2)
+
+# if 0 == user_number % 2:
+#     print('Even')
+# else:
+#     print("Odd")
+#  % 
+#  Спробуємо написати програму, яка приймає від користувача число і відповідає йому, 
+#  чи є це число парним :) Подумай, яку з цих операцій можна використати?
+
+
+# user_age = int(input("Enter your age "))
+
+# if user_age >= 18:
+#     print("Signing in")
+# else:
+#     print("Access not allowed SHOO!")
+    
+#value1 = 1
+#value2 = 2
+#values = [1,2]
+# print(values)
+
+
+# # create dictionary  
+#colors = {'red':"255,0,0"}
+
+#print(colors['red'])
+
+#colors["blue"]="0,0,255"
+
+#print(colors)
+
+#del colors['red']
+
+#print(colors)
+
+phone_book = {"Tima":"093-123-4567","Varvara":"063-456-1256","Will":"093-426-6789"}
+print("1 to Add contact.\n2 to Delete contact.\n3 to show  all contacts.")
+
+
+user_choice = input("Your number: ")
+
+
+# Додай логіку ще щоб виводити всі контакти 
+if user_choice == '1':
+    user_number = input("Please, enter contact's number ")#
+    user_name = input("Please, enter contact's name ")
+    phone_book[user_name] = user_number
+    print(phone_book[user_name])
+ # перевіряємо чи є новий контакт в телефонній книзі?)
+
+    print(phone_book)
+
+elif user_choice == '2':
+    user_name = input("Enter contac's name: ")
+    phone_book[user_name] = user_name
+    del(phone_book[user_name])
+    
+    print(phone_book)
+
+elif user_choice =='3':
+    print(phone_book)#тільки зроби так, щоб виводило при виборі цифри 3
+
+values:
+------
+
+
